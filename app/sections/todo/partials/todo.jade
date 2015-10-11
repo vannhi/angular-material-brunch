@@ -1,0 +1,19 @@
+md-content(layout="column", ng-controller='TodoCtrl')
+  h2.md-display-1 Todo
+  p {{remaining()}} of {{todos.length}} remaining [
+    a(href='', ng-click='archive()') archive
+    | ]
+  form(ng-submit='addTodo()')
+    md-content(layout-padding, layout="row")
+      md-input-container
+        label add new todo here
+        input(type='text', ng-model='todoText', size='30', required)
+      md-input-container
+        md-button.md-fab.md-mini(aria-label="add")
+          ng-md-icon(icon="add")
+  md-list
+    md-list-item(ng-repeat='todo in todos')
+      md-checkbox(ng-model='todo.done')
+      .md-list-item-text
+        span(ng-if="!todo.done") {{todo.text}}
+        s(ng-if="todo.done") {{todo.text}}

@@ -1,0 +1,25 @@
+{
+  "name": "angular-brunch-seed",
+  "repo": "scotch/angular-brunch-seed",
+  "version": "0.4.0",
+  "main": "_public/js/app.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "console-polyfill": "~0.2.0",
+    "angular": "~1.4.7",
+    "angular-sanitize": "~1.4.7",
+    "angular-mocks": "~1.4.7",
+    "angular-route": "~1.4.7",
+    "angular-material": "~0.11.2",
+    "angular-material-icons": "~0.6.0"
+  },
+  "overrides": {
+    "angular-mocks": {
+      "main": "README.md"
+    }
+  }
+}
