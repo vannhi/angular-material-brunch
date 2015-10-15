@@ -13,7 +13,7 @@
     "test": "node_modules/.bin/karma start karma.conf.coffee"
   },
   "dependencies": {
-    "auto-reload-brunch": "^1.8.0",
+    "auto-reload-brunch": "^1.8.1",
     "brunch": "^1.8.5",
     "clean-css-brunch": ">= 1.0 < 1.8",
     "coffee-script": "^1.10.0",
