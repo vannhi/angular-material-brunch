@@ -15,5 +15,4 @@ md-content(layout="column", ng-controller='TodoCtrl')
     md-list-item(ng-repeat='todo in todos')
       md-checkbox(ng-model='todo.done')
       .md-list-item-text
-        span(ng-if="!todo.done") {{todo.text}}
-        s(ng-if="todo.done") {{todo.text}}
+        span.todo-text(ng-class='{done: todo.done}') {{todo.text}}

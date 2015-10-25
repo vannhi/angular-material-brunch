@@ -1,3 +1,3 @@
 #!/bin/bash
 
-node_modules/.bin/karma start test/karma-e2e.conf.coffee
+node_modules/.bin/protractor test/protractor.conf.coffee
